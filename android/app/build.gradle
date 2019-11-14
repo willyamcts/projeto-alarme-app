@@ -21,7 +21,7 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.application' // SDK Firebase
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
@@ -64,4 +64,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // add the Firebase SDK for Google Analytics - SDK Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+    apply plugin: 'com.google.gms.google-services'  // SDK Firebase
+
 }

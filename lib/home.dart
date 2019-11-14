@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:alarme_app/components_test.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -59,6 +60,14 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {});
   }
 
+  // Navegação para próx. página
+  void _pageComponentsTest() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => ComponentsTest()));
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -72,7 +81,22 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        centerTitle: true,
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.account_circle,
+            ),
+            onPressed: () {},
+
+            /* icon: Icon(userSnapshot.hasData
+             ? Icons.exit_to_app 
+             : Icons.account_circle),
+             */
+          )
+        ],
       ),
+
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
@@ -105,21 +129,37 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Center(
                 child: Container(
-                    margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
-                    child: new FlatButton(
-                      child: Text("Testar componentes"),
-                      onPressed: () {},
+                    //width: 250,
+                    //height: 50,
+                    margin: EdgeInsets.fromLTRB(0, 35, 0, 5),
+                    child: MaterialButton(
+                        color: Colors.blueAccent,
+                        onPressed: _pageComponentsTest,
+                        shape: new ContinuousRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Text(
+                          "Testar Componentes",
+                          maxLines: 1,
+                          style: TextStyle(fontSize: 20),
+                        )),
+
+                        
+
+                    /* new FlatButton(
+                      child: Text(
+                        "Testar componentes",
+                        maxLines: 1,
+                        style: TextStyle(fontSize: 20),
+                      ),
+
+                      onPressed: _pageComponentsTest,
                       color: Colors.blueAccent,
-                    )))
+                    ) */
+                    ))
           ],
         ),
-
-
-
-        
       ),
-
-      
 
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
