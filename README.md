@@ -17,7 +17,7 @@ Mockup disponível [aqui](https://wireframepro.mockflow.com/view/Mc93745f815e66e
 
 Home: 
 
-![home](https://github.com/willyamcts/projeto-alarme-app/blob/master/home.png)
+![home](https://github.com/willyamcts/projeto-alarme-app/blob/dev/home.png)
 
 
 
