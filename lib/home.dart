@@ -89,9 +89,9 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: const EdgeInsets.all(105.0),
             ),
             
-            Center(
-                child: Container(
-                    margin: EdgeInsets.fromLTRB(0, 35, 0, 5),
+            Container(
+                child: Padding(
+                    padding: EdgeInsets.only(top: 100),
                     child: Switch(
                         value: testMode,
                         onChanged: (value) {
