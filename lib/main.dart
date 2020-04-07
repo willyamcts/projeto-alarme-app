@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'home.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Controle Alarme',
 
-      
+
       debugShowCheckedModeBanner: false, // Remove icon debug emulador
 
       theme: ThemeData(

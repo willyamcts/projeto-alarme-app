@@ -13,5 +13,13 @@ pubspec.lock
 doc/api/
 
 
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+**/android/.idea/
+
 # Plugin file Google
 **/android/app/google-services.json
+

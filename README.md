@@ -24,6 +24,7 @@ Home:
 ## Integrações
 
 * Firebase
+	- Realtime Database
 
 
 
