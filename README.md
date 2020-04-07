@@ -4,7 +4,7 @@ App em desenvolvimento para ser usado como meio de controle do projeto [Alarme](
 
 A aplicaçao permite:
 
-* <s> ativar e desativar o alarme; </s>
+* ativar e desativar o alarme;
 * <s> visualizar log de disparos e mudança de estado; </s>
 * <s> realizar teste nos módulos de forma isolada, com o intuito de verificar a integridade dos módulos </s>
 
